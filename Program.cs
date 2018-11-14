@@ -41,6 +41,7 @@ namespace _1411hw
             //}
 
             // 3
+            /*
             int a = Convert.ToInt32(Console.ReadLine());
 
             // if has two digits? >=10 and <= 99
@@ -71,8 +72,52 @@ namespace _1411hw
                     Console.WriteLine("Ahadot is bigger !");
                 }
             }
+            */
+
+            // 4
+
+            // first we test ourselves - can we find if number is prime?
+            //int m = 2;
+            //int x = Convert.ToInt32(Console.ReadLine());
+            //while (x % m != 0 && m < x)
+            //{
+            //    m++;
+            //}
+            //if ( x == m )
+            //{
+            //    Console.WriteLine("Rishoni");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Lo Rishoni!");
+            //}
+
+            for (int j = 1; j <= 100; j++)
+            {
 
 
+                int m = 2;
+                //int x = Convert.ToInt32(Console.ReadLine());
+
+                int x = j; // not from user, from for loop
+
+                while (x % m != 0 && m < x)
+                {
+                    m++;
+                }
+                if (x == m || x == 1)
+                {
+                    Console.Write(j);
+                    Console.WriteLine(" Rishoni");
+                }
+                else
+                {
+                    Console.Write(j);
+                    Console.WriteLine(" Lo Rishoni!");
+                }
+
+
+            }
         }
     }
 }
