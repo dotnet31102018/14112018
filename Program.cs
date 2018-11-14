@@ -92,31 +92,93 @@ namespace _1411hw
             //    Console.WriteLine("Lo Rishoni!");
             //}
 
-            for (int j = 1; j <= 100; j++)
+            //for (int j = 1; j <= 100; j++)
+            //{
+
+
+            //    int m = 2;
+            //    //int x = Convert.ToInt32(Console.ReadLine());
+
+            //    int x = j; // not from user, from for loop
+
+            //    while (x % m != 0 && m < x)
+            //    {
+            //        m++;
+            //    }
+            //    if (x == m || x == 1)
+            //    {
+            //        Console.Write(j);
+            //        Console.WriteLine(" Rishoni");
+            //    }
+            //    else
+            //    {
+            //        Console.Write(j);
+            //        Console.WriteLine(" Lo Rishoni!");
+            //    }
+
+
+            //}
+
+            //int money = Convert.ToInt32(Console.ReadLine());
+            //if (money >= 200)
+            //{
+            //    int mataaimBills = money / 200;
+            //    money = money - mataaimBills * 200;
+            //    Console.Write("200 x ");
+            //    Console.WriteLine(mataaimBills);
+            //}
+            //if (money >= 100)
+            //{
+            //    int meaBills = money / 100;
+            //    money = money - meaBills * 100;
+            //    Console.Write("100 x ");
+            //    Console.WriteLine(meaBills);
+            //}
+            //if (money >= 50)
+            //{
+            //    int hamishimBills = money / 50;
+            //    money = money - hamishimBills * 50;
+            //    Console.Write("50 x ");
+            //    Console.WriteLine(hamishimBills);
+            //}
+            //if (money >= 20)
+            //{
+            //    int esrimBills = money / 20;
+            //    money = money - esrimBills * 20;
+            //    Console.Write("20 x ");
+            //    Console.WriteLine(esrimBills);
+            //}
+
+            int size = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Result:");
+            //for (int i = 1; i <= size; i++)
+            //{
+            //    for (int j = 1; j <= size; j++)
+            //    {
+            //        if (j > i)
+            //        {
+            //            Console.Write('*');
+            //        }
+            //        else
+            //        {
+            //            Console.Write(j);
+            //        }
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            for (int i = 1; i <= size; i++)
             {
-
-
-                int m = 2;
-                //int x = Convert.ToInt32(Console.ReadLine());
-
-                int x = j; // not from user, from for loop
-
-                while (x % m != 0 && m < x)
+                for (int j = 1; j <= i; j++)
                 {
-                    m++;
-                }
-                if (x == m || x == 1)
-                {
-                    Console.Write(j);
-                    Console.WriteLine(" Rishoni");
-                }
-                else
-                {
-                    Console.Write(j);
-                    Console.WriteLine(" Lo Rishoni!");
+                    Console.Write( j );
                 }
 
-
+                for (int j = i + 1; j <= size; j++)
+                {
+                    Console.Write('*');
+                }
+                Console.WriteLine();
             }
         }
     }
