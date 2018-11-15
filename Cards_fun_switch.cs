@@ -34,7 +34,7 @@ namespace _1411_cards
                 // go to sleep
                 System.Threading.Thread.Sleep(300);
 
-                Console.WriteLine("Computer Card:");
+                Console.WriteLine("Computer Card:"); 
                 // me vrs computer
                 // get random card
                 int card2 = r.Next(2, 15);
